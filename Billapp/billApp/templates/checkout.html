@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Product Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Chosen Price</th>
+        </tr>
+        </thead>
+        {% for i in item %}
+        <tbody>
+        <tr>
+            <td>{{ i.pcode }}</td>
+            <td>{{ i.name }}</td>
+            <td><select id="mySelect" onchange="update_data()">
+                <option value={{ i.price1 }}>{{ i.price1 }}</option>
+                <option value={{ i.price2 }}>{{ i.price2 }}</option>
+                <option value={{ i.price3 }}>{{ i.price3 }}</option>
+              </select>
+            </td>
+        </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+
+{% endblock content %}

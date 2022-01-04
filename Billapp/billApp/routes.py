@@ -1,13 +1,16 @@
 from billApp import app
-from flask import render_template,redirect,url_for,request
+from flask import render_template,redirect,url_for,request,session
 from billApp.models import Item, Customer
 from billApp import db
 
 
-@app.route("/")
+@app.route("/h")
 def home():
-    items = Item.query.all()
-    return render_template("home.html",items=items)
+    data = {}
+    data['customer'] = "San"
+    print(data)
+    return render_template("home.html",data=data)
+
 
 
 @app.route('/add', methods=['POST', 'GET'])
@@ -27,7 +30,7 @@ def add():
             return 'There was an issue adding your task'
     return render_template('item.html')
 
-@app.route('/customer',methods=['POST', 'GET'])
+@app.route('/',methods=['POST', 'GET'])
 def customer():
     if request.method == 'POST':
         vid = request.form['cid']
@@ -35,10 +38,19 @@ def customer():
         if kid:
             print(vid)
             print(kid)
-            return redirect(url_for("home"))
+            data = {}
+            data["customer"] = "San"
+            session['data'] = data
+            return redirect(url_for("home",data=data))
         else:
             print("error")
     return render_template('customer.html')
+
+@app.route('/g',methods=['POST','GET'])
+def guest():
+    data = {}
+    data["customer"] = ""
+    return render_template('guest.html',data = data)
 
 @app.route('/register',methods=['POST', 'GET'])
 def register():
@@ -50,14 +62,8 @@ def register():
         try:
             db.session.add(new_c)
             db.session.commit()
+            return redirect(url_for('home'))
         except:
             return 'There was an issue adding your task'
     return render_template('register.html')
 
-@app.route('/bill',methods=['POST', 'GET'])
-def bill():
-    item = ''
-    if request.method == "POST":
-        Qcode = request.form['pcode']
-        item = db.session.query(Item).filter(Item.pcode == Qcode)
-    return render_template("bill.html", item=item)

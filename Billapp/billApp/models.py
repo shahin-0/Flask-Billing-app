@@ -1,7 +1,5 @@
 from billApp import db
 
-
-
 class Customer(db.Model):
     cid = db.Column(db.String(), nullable = False,primary_key=True)
     cname = db.Column(db.String(length=30), nullable = False, unique=True)
@@ -22,7 +20,3 @@ class Item(db.Model):
     
     def __str__(self):
         return f'{self.name}'
-    
-    
-    
-

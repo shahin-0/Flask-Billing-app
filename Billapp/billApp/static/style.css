@@ -1,0 +1,111 @@
+body {
+    font-family: Nunito;
+    background-color: #EAE7DC;
+    color: #8E8D8A;
+}
+
+#item-table {
+    margin-top: 50px;
+    color: #2d1f69;
+}
+
+#quantity {
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#mainbar {
+    background-color: #EAE7DC;
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+#title{
+    color: #E85A4F;
+    font-size: 50px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+#login{
+    margin-left: -200px;
+}
+
+#login-block {
+    margin-top: 100px;
+    margin-left: 370px;
+}
+
+#register-block{
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+#login-title {
+    color: #25274D;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+#reg-title{
+    color: #25274D;
+    text-align: center;
+    font-weight: 700; 
+    margin-top: 100px;
+    margin-bottom: -50px;
+    margin-left: -80px;
+}
+
+#login-button{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #25274D;
+    border: 0;
+    color: #EAE7DC;
+}
+
+#reg-but{
+    width: 150px;
+    height: 40px;
+    background-color: #25274D;
+    border: 0;
+    color: #EAE7DC;
+    margin-left: 130px;
+    margin-bottom: -70px;
+}
+
+#register-button{
+    margin-top: 30px;
+    margin-left: 55px;
+    width: 150px;
+    height: 40px;
+    background-color: #25274D;
+    border: 0;
+    color: #EAE7DC;
+}
+
+a{
+    text-decoration: none;
+    color: #EAE7DC;
+}
+
+
+#guest-login{
+    background-color: #25274D;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #EAE7DC;
+}
+
+#guest-button{
+    background-color: #25274D;
+    border: none;
+    width: 316px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 425px;
+}
