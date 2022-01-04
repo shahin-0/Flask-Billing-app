@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="col-md-4 col-md-offset-4">
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Product Name"
+            />
+        </div>
+        <div class="form-group">
+            <label for="price1">1st quality price</label>
+            <input
+            type="text"
+            class="form-control"
+            id="price1"
+            name="price1"
+            placeholder=""
+            />
+        </div>
+        <div class="form-group">
+            <label for="price1">2nd quality price</label>
+            <input
+            type="text"
+            class="form-control"
+            id="price2"
+            name="price2"
+            placeholder=""
+            />
+        </div>
+        <div class="form-group">
+            <label for="price1">3rd quality price</label>
+            <input
+            type="text"
+            class="form-control"
+            id="price3"
+            name="price3"
+            placeholder=""
+            />
+        </div>
+        <div class="form-group">
+            <label for="price1">Product code</label>
+            <input
+            type="text"
+            class="form-control"
+            id="pcode"
+            name="pcode"
+            placeholder=""
+            />
+        </div>
+        <button type="submit" class="btn btn-primary">Enter</button>
+        </form>
+    </div>
+{% endblock %}
