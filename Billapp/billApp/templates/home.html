@@ -3,76 +3,798 @@ block content %}
 
 <table class="table table-bordered">
   <thead>
-  <tr>
-    <th scope="col">Product Code</th>
-    <th scope="col">Name</th>
-    <th scope="col" colspan="2">Price 1</th>
-    <th scope="col" colspan="2">Price 2</th>
-    <th scope="col" colspan="2">Price 3</th>
-    <th scope="col">Amount</th>
-</tr>
-</thead>
+    <tr>
+      <th scope="col">Product Code</th>
+      <th scope="col">Name</th>
+      <th scope="col" colspan="2">Price 1</th>
+      <th scope="col" colspan="2">Price 2</th>
+      <th scope="col" colspan="2">Price 3</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
 
-<tbody>
-<tr>
-    <td id="pcode1">1O1A</td>
-    <td id="pname1">Brown Rice</td>
-    <td id="price1_1">5000.0</td>
-    <td><button id="price1_1_1" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price2_1">45.5</td>
-    <td><button id="price2_1_2" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price3_1">41.25</td>
-    <td><button id="price3_1_3" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="a1"></td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td id="pcode1">101A</td>
+      <td id="pname1">Brown Rice</td>
+      <td id="price1_1">5000.0</td>
+      <td>
+        <button id="price1_1_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_1">4500.5</td>
+      <td>
+        <button id="price2_1_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_1">4100.25</td>
+      <td>
+        <button id="price3_1_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a1"></td>
+    </tr>
+  </tbody>
 
-<tbody>
-<tr>
-    <td id="pcode2">102B</td>
-    <td id="pname2">Whole wheat</td>
-    <td id="price1_2">30.0</td>
-    <td><button id="price1_2_1" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price2_2">27.45</td>
-    <td><button id="price2_2_2" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price3_2">21.5</td>
-    <td><button id="price3_2_3" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="a2"></td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td id="pcode2">102B</td>
+      <td id="pname2">Whole wheat</td>
+      <td id="price1_2">3000.0</td>
+      <td>
+        <button id="price1_2_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_2">2700.45</td>
+      <td>
+        <button id="price2_2_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_2">2100.5</td>
+      <td>
+        <button id="price3_2_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a2"></td>
+    </tr>
+  </tbody>
 
-<tbody>
-<tr>
-    <td id="pcode3">102C</td>
-    <td id="pname3">Tomato Sauce</td>
-    <td id="price1_3">25.5</td>
-    <td><button id="price1_3_1" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price2_3">20.25</td>
-    <td><button id="price2_3_2" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price3_3">18.7</td>
-    <td><button id="price3_3_3" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="a3"></td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td id="pcode3">102C</td>
+      <td id="pname3">Tomato Sauce</td>
+      <td id="price1_3">25.5</td>
+      <td>
+        <button id="price1_3_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_3">20.25</td>
+      <td>
+        <button id="price2_3_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_3">18.7</td>
+      <td>
+        <button id="price3_3_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a3"></td>
+    </tr>
+  </tbody>
 
-<tbody>
-<tr>
-    <td id="pcode4">103D</td>
-    <td id="pname4">Mustard</td>
-    <td id="price1_4">40.0</td>
-    <td><button id="price1_4_1" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price2_4">39.45</td>
-    <td><button id="price2_4_2" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="price3_4">37.0</td>
-    <td><button id="price3_4_3" onclick="bill(this)"><i class="fa fa-plus"></i></button></td>
-    <td id="a4"></td>
-</tr>
-<tr>
-    <td colspan="8"><b>Total</b></td>
-    <td id="amount"></td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode4">103D</td>
+      <td id="pname4">Mustard</td>
+      <td id="price1_4">40.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_4">39.45</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_4">37.0</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode5">104E</td>
+      <td id="pname5">Barbecue sauce</td>
+      <td id="price1_5">44.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_5">43.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_5"">41.50</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode6">105F</td>
+      <td id="pname6">Red-wine vinegar</td>
+      <td id="price1_6">4000</td>
+      <td>
+        <button id="price1_6_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_6">3800</td>
+      <td>
+        <button id="price2_6_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_6">3750</td>
+      <td>
+        <button id="price3_6_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode7">106G</td>
+      <td id="pname7">Salsa</td>
+      <td id="price1_7">200</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_7">189.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_7">170</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode8">107H</td>
+      <td id="pname8">Extra virgin Olive Oil</td>
+      <td id="price1_8">500</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_8">478.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_8">455.70</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode9">108I</td>
+      <td id="pname9">Canola oil</td>
+      <td id="price1_9">200</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_9">180</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_9">118</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode10">109I</td>
+      <td id="pname10">Hot pepper sauce</td>
+      <td id="price1_10">100</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_10">98.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_10">91.25</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode11">110K</td>
+      <td id="pname11">Bananas</td>
+      <td id="price1_11">60.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_11">55.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_11">50.00</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode12">11L</td>
+      <td id="pname12">Apples</td>
+      <td id="price1_12">300</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_12">250</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_12">120.00</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode13">112M</td>
+      <td id="pname13">Oranges</td>
+      <td id="price1_13">200</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_13">140</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_13">110</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode14">113N</td>
+      <td id="pname14">Mangoes</td>
+      <td id="price1_14">100</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_14">80.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_14">50.00</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode15">114O</td>
+      <td id="pname15">Strawberries</td>
+      <td id="price1_15">100.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_15">90.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_15">80.00</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode16">115P</td>
+      <td id="pname16">Blueberries</td>
+      <td id="price1_16">95.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_16">80.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_16">75.0</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode17">116Q</td>
+      <td id="pname17">Green Tea</td>
+      <td id="price1_17">250</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_17">225</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_17">200</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode18">117R</td>
+      <td id="pname18">Sparkling water</td>
+      <td id="price1_18">20.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_18">14.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_18">11.0</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode19">118S</td>
+      <td id="pname19">Dried apricots</td>
+      <td id="price1_19">270</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_19">250</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_19">230</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode20">119T</td>
+      <td id="pname20">Dried figs</td>
+      <td id="price1_20">100</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_20">95</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_20">90</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode21">120U</td>
+      <td id="pname21">Dried prunes</td>
+      <td id="price1_21">90.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_21">85.0</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_21">80.0</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode22">121V</td>
+      <td id="pname22">Almonds</td>
+      <td id="price1_22">900</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_22">870</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_22">850</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode23">122W</td>
+      <td id="pname23">Cashews</td>
+      <td id="price1_23">1000</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_23">950</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_23">910</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode24">123X</td>
+      <td id="pname24">Walnuts</td>
+      <td id="price1_24">800</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_24">770</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_24">720</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode25">124Y</td>
+      <td id="pname25">Peanuts</td>
+      <td id="price1_25">400</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_25">380</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_25">360</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode26">125Z</td>
+      <td id="pname26">Pecans</td>
+      <td id="price1_26">350</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_26">320</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_26">300</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode27">201A</td>
+      <td id="pname27">Pistachios</td>
+      <td id="price1_27">1200</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_27">1180</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_27">11600</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode28">202B</td>
+      <td id="pname28">Sunflower seeds</td>
+      <td id="price1_28">150</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_28">112.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_28">103.45</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode29">202B</td>
+      <td id="pname29">Sunflower seeds</td>
+      <td id="price1_29">150.0</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_29">112.50</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_29">103.45</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode30">203C</td>
+      <td id="pname30">Sesame seeds</td>
+      <td id="price1_30">120.50</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_30">110.25</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_30">101.40</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td id=" pcode31">204D</td>
+      <td id="pname31">Whole flaxseeds</td>
+      <td id="price1_31">95.20</td>
+      <td>
+        <button id="price1_4_1" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price2_31">90.40</td>
+      <td>
+        <button id="price2_4_2" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="price3_31">89.20</td>
+      <td>
+        <button id="price3_4_3" onclick="bill(this)">
+          <i class="fa fa-plus"></i>
+        </button>
+      </td>
+      <td id="a4"></td>
+    </tr>
+    <tr>
+      <td colspan="8"><b>Total</b></td>
+      <td id="amount"></td>
+    </tr>
+  </tbody>
 </table>
 <p id="customer" style="display: none">{{ data['customer'] }}</p>
-
 {% endblock content %}
